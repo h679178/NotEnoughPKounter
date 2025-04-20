@@ -6,6 +6,7 @@ Sprites:
 	http://pkmn.net/
 	https://sprites.pmdcollab.org/
 	https://pokeapi.co/
+	https://veekun.com/
 	
 Design and programming:
 	/u/Shiratama_
