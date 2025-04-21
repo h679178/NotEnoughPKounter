@@ -168,9 +168,6 @@
             // 
             this.CKB_AUTOSAVE.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.CKB_AUTOSAVE.AutoSize = true;
-            this.CKB_AUTOSAVE.Checked = global::PokemonCounter.Properties.Settings.Default.AutoSaveTrue;
-            this.CKB_AUTOSAVE.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CKB_AUTOSAVE.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::PokemonCounter.Properties.Settings.Default, "AutoSaveTrue", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.CKB_AUTOSAVE.Location = new System.Drawing.Point(4, 15);
             this.CKB_AUTOSAVE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CKB_AUTOSAVE.Name = "CKB_AUTOSAVE";

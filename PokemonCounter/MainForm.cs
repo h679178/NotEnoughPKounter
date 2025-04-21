@@ -101,11 +101,11 @@ namespace PokemonCounter
 
                 Lib.Hunt newHunt = new Lib.Hunt();
                 newHunt.ID = huntID;
-                newHunt.autosave = false;
+                newHunt.autosave = true;
                 newHunt.pkmnIndex = 0;
                 newHunt.alpha = false;
                 newHunt.shiny = true;
-                newHunt.animated = true;
+                newHunt.animated = false;
                 newHunt.genIndex = 4;
                 newHunt.gameIndex = 0;
                 newHunt.complete = false;
@@ -150,7 +150,7 @@ namespace PokemonCounter
                 counter.Height = 25;
                 counter.AutoSize = false;
                 counter.TextAlign = ContentAlignment.MiddleRight;
-                counter.Text = "Encounters";
+                counter.Text = "0";
                 //counter.Font = new Font(counter.Font, FontStyle.Bold);
                 newHunt.counter = counter;
                 subpanelpokemon.Controls.Add(counter);

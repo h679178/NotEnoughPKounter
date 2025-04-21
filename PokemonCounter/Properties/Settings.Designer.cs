@@ -22,29 +22,5 @@ namespace PokemonCounter.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool AutoSaveTrue {
-            get {
-                return ((bool)(this["AutoSaveTrue"]));
-            }
-            set {
-                this["AutoSaveTrue"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool GifCheckFalse {
-            get {
-                return ((bool)(this["GifCheckFalse"]));
-            }
-            set {
-                this["GifCheckFalse"] = value;
-            }
-        }
     }
 }

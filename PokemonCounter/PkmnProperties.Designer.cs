@@ -68,11 +68,11 @@
             this.PNL_PICTURE = new System.Windows.Forms.Panel();
             this.PNL_PICTURE_UNDERLINE = new System.Windows.Forms.Panel();
             this.TBL_PICTURE = new System.Windows.Forms.TableLayoutPanel();
-            this.LBL_PICTURE = new System.Windows.Forms.Label();
-            this.CKB_SHINY = new System.Windows.Forms.CheckBox();
-            this.TB_SEARCH = new System.Windows.Forms.TextBox();
             this.LBL_SEARCH = new System.Windows.Forms.Label();
             this.CKB_GIF = new System.Windows.Forms.CheckBox();
+            this.CKB_SHINY = new System.Windows.Forms.CheckBox();
+            this.TB_SEARCH = new System.Windows.Forms.TextBox();
+            this.LBL_PICTURE = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NMUD_COUNTER)).BeginInit();
             this.PNL_MENU.SuspendLayout();
             this.PNL_CONTENT.SuspendLayout();
@@ -609,16 +609,29 @@
             this.TBL_PICTURE.Size = new System.Drawing.Size(293, 263);
             this.TBL_PICTURE.TabIndex = 32;
             // 
-            // LBL_PICTURE
+            // LBL_SEARCH
             // 
-            this.LBL_PICTURE.AutoSize = true;
-            this.LBL_PICTURE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_PICTURE.Location = new System.Drawing.Point(10, 12);
-            this.LBL_PICTURE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LBL_PICTURE.Name = "LBL_PICTURE";
-            this.LBL_PICTURE.Size = new System.Drawing.Size(79, 25);
-            this.LBL_PICTURE.TabIndex = 25;
-            this.LBL_PICTURE.Text = "Picture";
+            this.LBL_SEARCH.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.LBL_SEARCH.AutoSize = true;
+            this.LBL_SEARCH.Location = new System.Drawing.Point(4, 11);
+            this.LBL_SEARCH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LBL_SEARCH.Name = "LBL_SEARCH";
+            this.LBL_SEARCH.Size = new System.Drawing.Size(60, 20);
+            this.LBL_SEARCH.TabIndex = 15;
+            this.LBL_SEARCH.Text = "Search";
+            // 
+            // CKB_GIF
+            // 
+            this.CKB_GIF.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CKB_GIF.AutoSize = true;
+            this.CKB_GIF.Location = new System.Drawing.Point(4, 138);
+            this.CKB_GIF.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CKB_GIF.Name = "CKB_GIF";
+            this.CKB_GIF.Size = new System.Drawing.Size(63, 24);
+            this.CKB_GIF.TabIndex = 5;
+            this.CKB_GIF.Text = "GIF";
+            this.CKB_GIF.UseVisualStyleBackColor = true;
+            this.CKB_GIF.CheckedChanged += new System.EventHandler(this.CKB_GIF_CheckedChanged);
             // 
             // CKB_SHINY
             // 
@@ -644,31 +657,16 @@
             this.TB_SEARCH.TabIndex = 14;
             this.TB_SEARCH.TextChanged += new System.EventHandler(this.TB_SEARCH_TextChanged);
             // 
-            // LBL_SEARCH
+            // LBL_PICTURE
             // 
-            this.LBL_SEARCH.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.LBL_SEARCH.AutoSize = true;
-            this.LBL_SEARCH.Location = new System.Drawing.Point(4, 11);
-            this.LBL_SEARCH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LBL_SEARCH.Name = "LBL_SEARCH";
-            this.LBL_SEARCH.Size = new System.Drawing.Size(60, 20);
-            this.LBL_SEARCH.TabIndex = 15;
-            this.LBL_SEARCH.Text = "Search";
-            // 
-            // CKB_GIF
-            // 
-            this.CKB_GIF.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.CKB_GIF.AutoSize = true;
-            this.CKB_GIF.Checked = global::PokemonCounter.Properties.Settings.Default.GifCheckFalse;
-            this.CKB_GIF.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::PokemonCounter.Properties.Settings.Default, "GifCheckFalse", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.CKB_GIF.Location = new System.Drawing.Point(4, 138);
-            this.CKB_GIF.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.CKB_GIF.Name = "CKB_GIF";
-            this.CKB_GIF.Size = new System.Drawing.Size(63, 24);
-            this.CKB_GIF.TabIndex = 5;
-            this.CKB_GIF.Text = "GIF";
-            this.CKB_GIF.UseVisualStyleBackColor = true;
-            this.CKB_GIF.CheckedChanged += new System.EventHandler(this.CKB_GIF_CheckedChanged);
+            this.LBL_PICTURE.AutoSize = true;
+            this.LBL_PICTURE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBL_PICTURE.Location = new System.Drawing.Point(10, 12);
+            this.LBL_PICTURE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LBL_PICTURE.Name = "LBL_PICTURE";
+            this.LBL_PICTURE.Size = new System.Drawing.Size(79, 25);
+            this.LBL_PICTURE.TabIndex = 25;
+            this.LBL_PICTURE.Text = "Picture";
             // 
             // PkmnProperties
             // 
