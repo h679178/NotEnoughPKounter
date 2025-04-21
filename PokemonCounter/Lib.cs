@@ -359,6 +359,7 @@ namespace PokemonCounter
             {
                 if (HuntsList[i].autosave)
                 {
+                    if (HuntsList[i].counter.Text == "Encounters") { continue; }
                     int huntID = HuntsList[i].ID;
                     bool autoSave = HuntsList[i].autosave;
                     int genIndex = HuntsList[i].genIndex;

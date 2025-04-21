@@ -150,7 +150,7 @@ namespace PokemonCounter
                 counter.Height = 25;
                 counter.AutoSize = false;
                 counter.TextAlign = ContentAlignment.MiddleRight;
-                counter.Text = "0";
+                counter.Text = "Encounters";
                 //counter.Font = new Font(counter.Font, FontStyle.Bold);
                 newHunt.counter = counter;
                 subpanelpokemon.Controls.Add(counter);
